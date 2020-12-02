@@ -1,0 +1,20 @@
+debug: false
+server:
+  port: 8083
+  servlet:
+    context-path: /
+spring:
+  rabbitmq:
+    host: 192.168.229.129
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+delay:
+  queue:
+    exchange: jiangll
+    queue: jiangll
+    ttlExchange: liuyujiao
+    ttl-queue: liuyujiao
+    routing-key: key
+    ttl-routing-key: key1
